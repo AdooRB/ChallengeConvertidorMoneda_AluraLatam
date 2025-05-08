@@ -6,7 +6,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class DatosApi {
+public class ConexionHTTP {
     private String infoJson;
     private Gson gson = new Gson();
     private HttpClient client = HttpClient.newHttpClient();
@@ -14,7 +14,7 @@ public class DatosApi {
     private HttpResponse<String> response;
     private DatasApi datas;
 
-    public DatosApi(String desde, String para) throws IOException, InterruptedException {
+    public ConexionHTTP(String desde, String para) throws IOException, InterruptedException {
         Direccion url = new Direccion(desde);
         request =HttpRequest.newBuilder()
                 .uri(URI.create(url.getURLnueva()))
