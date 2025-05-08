@@ -13,8 +13,16 @@ public class ConexionHTTP {
     private HttpRequest request;
     private HttpResponse<String> response;
     private DatasApi datas;
+    private String divisaObtener;
+    private double valorFiltrado;
+
+    public double getValorFiltrado() {
+        valorFiltrado = datas.conversion_rates().get(divisaObtener);
+        return valorFiltrado;
+    }
 
     public ConexionHTTP(String desde, String para) throws IOException, InterruptedException {
+        this.divisaObtener = para;
         Direccion url = new Direccion(desde);
         request =HttpRequest.newBuilder()
                 .uri(URI.create(url.getURLnueva()))
