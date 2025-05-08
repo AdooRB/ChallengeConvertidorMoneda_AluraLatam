@@ -3,7 +3,8 @@ import java.util.*;
 public class Menu {
     private HashMap<String, String> coleccionDivisas = new HashMap<>();
     private HashMap<Integer, String> listaDeOpciones = new HashMap<>();
-    private int opcionesNumero = 3;
+    private String divisaPrincipal;
+    private int opcionesNumero;
 
     public HashMap<String, String> getColeccionDivisas() {
         return coleccionDivisas;
@@ -11,6 +12,14 @@ public class Menu {
 
     public HashMap<Integer, String> getListaDeOpciones() {
         return listaDeOpciones;
+    }
+
+    public String getDivisaPrincipal() {
+        return divisaPrincipal;
+    }
+
+    public void setDivisaPrincipal(String divisaPrincipal) {
+        this.divisaPrincipal = divisaPrincipal;
     }
 
     public int getOpcionesNumero() {
@@ -30,7 +39,7 @@ public class Menu {
         coleccionDivisas.remove(divisa);
     }
 
-    public void generarMenu(String divisaPrincipal){
+    public void generarMenu(){
         String menuDivisas = """
                 *************************************************
                 Sea bienvenido/a al Conversor de Mondedas  =)
