@@ -31,9 +31,18 @@ public class Conversion {
     }
 
     public void muestraResultado(){
-        String mensaje = "El valor de %s corresponde al valor final de =>> %s";
-        String valorInicial = resouesta +" en " + divisas.get(divisaPrincipal);
-        String valorFinal = datoConvertido +" en " + divisas.get(opciones.get(opcion));
+        String mensaje = "\nEl valor de %s corresponde al valor final de =>> %s\n";
+        String valorInicial;
+        String valorFinal;
+
+        if (opcion % 2 == 1) {
+           valorInicial = resouesta + " en " + divisas.get(divisaPrincipal);
+           valorFinal = datoConvertido + " en " + divisas.get(opciones.get(opcion));
+       } else {
+           valorInicial = resouesta + " en " + divisas.get(opciones.get(opcion));
+           valorFinal = datoConvertido + " en " + divisas.get(divisaPrincipal);
+       }
+
         System.out.println(String.format(mensaje,valorInicial,valorFinal));
     }
 
