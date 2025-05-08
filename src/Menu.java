@@ -51,6 +51,7 @@ public class Menu {
         }
         numeral++;
         menuDivisas += "\n  " + numeral + ") Salir";
+        menuDivisas += "\n\nElija la opción válida:";
         System.out.println(menuDivisas);
 
     }
