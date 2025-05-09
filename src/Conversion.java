@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.lang.invoke.StringConcatFactory;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -9,7 +8,7 @@ public class Conversion {
     private HashMap<Integer,String> opciones;
     private String divisaPrincipal;
     private int opcion;
-    private double resouesta;
+    private double respuesta;
     private double datoConvertido;
 
     public void inicia(int opcion, Menu menu) throws IOException, InterruptedException {
@@ -25,9 +24,8 @@ public class Conversion {
             conexion = new ConexionHTTP(opciones.get(opcion), divisaPrincipal);
         }
         System.out.println("Ingresa el valor que deseas convertir");
-        resouesta = interaccion.nextDouble();
-        datoConvertido = resouesta * conexion.getValorFiltrado();
-        System.out.println(datoConvertido);
+        respuesta = interaccion.nextDouble();
+        datoConvertido = respuesta * conexion.getValorFiltrado();
     }
 
     public void muestraResultado(){
@@ -36,11 +34,11 @@ public class Conversion {
         String valorFinal;
 
         if (opcion % 2 == 1) {
-           valorInicial = resouesta + " en " + divisas.get(divisaPrincipal);
-           valorFinal = datoConvertido + " en " + divisas.get(opciones.get(opcion));
+            valorInicial = String.format("%.2f en %s",respuesta, divisas.get(divisaPrincipal));
+            valorFinal = String.format("%.2f en %s",datoConvertido, divisas.get(opciones.get(opcion)));
        } else {
-           valorInicial = resouesta + " en " + divisas.get(opciones.get(opcion));
-           valorFinal = datoConvertido + " en " + divisas.get(divisaPrincipal);
+            valorInicial = String.format("%.2f en %s",respuesta, divisas.get(opciones.get(opcion)));
+            valorFinal = String.format("%.2f en %s",datoConvertido, divisas.get(divisaPrincipal));
        }
 
         System.out.println(String.format(mensaje,valorInicial,valorFinal));

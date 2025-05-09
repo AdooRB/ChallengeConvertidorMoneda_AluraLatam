@@ -31,10 +31,8 @@ public class ConexionHTTP {
         response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         infoJson = response.body();
-        //System.out.println(infoJson);
 
         datas = (gson.fromJson(infoJson, DatasApi.class));
-        //System.out.println(datas);
     }
 
 }

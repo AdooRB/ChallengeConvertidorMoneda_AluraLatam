@@ -60,7 +60,13 @@ public class Menu {
         }
         numeral++;
         menuDivisas += "\n  " + numeral + ") Salir";
-        menuDivisas += "\n\nElija la opción válida:";
+        menuDivisas += "\n\nElija una opción válida:";
+
+        if (divisaPrincipal == null){
+            throw new NullPointerException("Error, no hay un parámetro como 'Divisa Principal'");
+        } else if (!coleccionDivisas.containsKey(divisaPrincipal)) {
+            throw new ArithmeticException("Error, no se encuentra en la 'Divisa Principal' dentro de la Collección de Divisas");
+        }
         System.out.println(menuDivisas);
 
     }

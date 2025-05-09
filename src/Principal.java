@@ -1,32 +1,45 @@
 import java.io.IOException;
-import java.util.HashMap;
+import java.net.ConnectException;
 import java.util.Scanner;
 
 public class Principal {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) {
 
-        Menu menu = new Menu();
-        Scanner interaccion = new Scanner(System.in);
-        Conversion conversionDivisas = new Conversion();
-        int respuesta;
+        try {
+            Menu menu = new Menu();
+            Scanner interaccion = new Scanner(System.in);
+            Conversion conversionDivisas = new Conversion();
+            int respuesta;
 
-        menu.agregarDivisa("USD", "Dólar");
-        menu.agregarDivisa("JPY", "Yen Japonés");
-        menu.agregarDivisa("COP", "Peso Colombiano");
-        menu.agregarDivisa("BRL", "Real Brasileño");
-        menu.agregarDivisa("MXN", "Peso Mexicano");
-        //menu.agregarDivisa("ARG", "Peso Argentino");
+            menu.agregarDivisa("USD", "Dólar");
+            menu.agregarDivisa("JPY", "Yen Japonés");
+            menu.agregarDivisa("COP", "Peso Colombiano");
+            menu.agregarDivisa("BRL", "Real Brasileño");
+            menu.agregarDivisa("MXN", "Peso Mexicano");
+            //menu.agregarDivisa("ARG", "Peso Argentino");
 
-        menu.setDivisaPrincipal("USD");
+            menu.setDivisaPrincipal("USD");
 
-        while (true) {
-            menu.generarMenu();
-            respuesta = interaccion.nextInt();
-            if (respuesta == menu.getOpcionesNumero()){
-                break;
+            while (true) {
+                menu.generarMenu();
+                respuesta = interaccion.nextInt();
+
+                if (respuesta == menu.getOpcionesNumero()) {
+                    System.out.println("Fin del Programa.");
+                    break;
+                } else if (respuesta > menu.getOpcionesNumero() || respuesta < 1){
+                    throw new ArithmeticException("Error, valor introducido fuera de rango");
+                }
+
+                conversionDivisas.inicia(respuesta, menu);
+                conversionDivisas.muestraResultado();
             }
-            conversionDivisas.inicia(respuesta, menu);
-            conversionDivisas.muestraResultado();
+        } catch (NullPointerException |ArithmeticException e) {
+            System.out.println(e.getLocalizedMessage());
+        } catch (ConnectException e){
+            System.out.println("Error de conexión del internet");
+        } catch (IOException | InterruptedException e){
+            System.out.println(e.getMessage());
         }
 
     }

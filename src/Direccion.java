@@ -8,8 +8,6 @@ public class Direccion {
 
     public Direccion(String busqueda){
         URLnueva = urlOrigin + busqueda;
-        System.out.println(URLnueva);
     }
-
 
 }
