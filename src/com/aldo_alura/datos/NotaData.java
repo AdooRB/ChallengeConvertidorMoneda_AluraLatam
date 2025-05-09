@@ -1,0 +1,38 @@
+package com.aldo_alura.datos;
+
+public class NotaData {
+    private String divisaOriginal;
+    private String divisaAConvertir;
+    private double cantidadOriginal;
+    private double cantidadConvertida;
+
+    public NotaData(){}
+
+    public NotaData(String divisaPrincipal, String divisaAConvertir, double cantidadOriginal, double cantidadConvertida){
+        this.divisaOriginal = divisaPrincipal;
+        this.divisaAConvertir = divisaAConvertir;
+        this.cantidadOriginal = cantidadOriginal;
+        this.cantidadConvertida = cantidadConvertida;
+    }
+
+    public void setDivisaOriginal(String divisaOriginal) {
+        this.divisaOriginal = divisaOriginal;
+    }
+
+    public void setDivisaAConvertir(String divisaAConvertir) {
+        this.divisaAConvertir = divisaAConvertir;
+    }
+
+    public void setCantidadOriginal(double cantidadOriginal) {
+        this.cantidadOriginal = cantidadOriginal;
+    }
+
+    public void setCantidadConvertida(double cantidadConvertida) {
+        this.cantidadConvertida = cantidadConvertida;
+    }
+
+    @Override
+    public String toString() {
+        return cantidadOriginal + " " + divisaOriginal + " ->> " + cantidadConvertida + " " + divisaAConvertir;
+    }
+}
