@@ -1,4 +1,5 @@
 import com.aldo_alura.calculos.*;
+import com.aldo_alura.datos.AlmacenaNota;
 
 import java.io.IOException;
 import java.net.ConnectException;
@@ -11,6 +12,7 @@ public class Principal {
             Menu menu = new Menu();
             Scanner interaccion = new Scanner(System.in);
             Conversion conversionDivisas = new Conversion();
+            AlmacenaNota  almacenamiento = new AlmacenaNota();
             int respuesta;
 
             menu.agregarDivisa("USD", "Dólar");
@@ -35,7 +37,11 @@ public class Principal {
 
                 conversionDivisas.inicia(respuesta, menu);
                 conversionDivisas.muestraResultado();
+
+                almacenamiento.agrega(conversionDivisas.exportaDatos());
+                System.out.println(conversionDivisas.exportaDatos().toString());
             }
+            almacenamiento.guardaData();
         } catch (NullPointerException |ArithmeticException e) {
             System.out.println(e.getLocalizedMessage());
         } catch (ConnectException e){
