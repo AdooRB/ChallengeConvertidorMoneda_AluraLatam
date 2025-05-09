@@ -56,7 +56,7 @@ public class Conversion {
         System.out.println(String.format(mensaje,valorInicial,valorFinal));
     }
 
-    public NotaData getAlmacenaDatos() {
+    public NotaData exportaDatos() {
         return almacenaDatos;
     }
 }
