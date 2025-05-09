@@ -6,15 +6,6 @@ public class NotaData {
     private double cantidadOriginal;
     private double cantidadConvertida;
 
-    public NotaData(){}
-
-    public NotaData(String divisaPrincipal, String divisaAConvertir, double cantidadOriginal, double cantidadConvertida){
-        this.divisaOriginal = divisaPrincipal;
-        this.divisaAConvertir = divisaAConvertir;
-        this.cantidadOriginal = cantidadOriginal;
-        this.cantidadConvertida = cantidadConvertida;
-    }
-
     public void setDivisaOriginal(String divisaOriginal) {
         this.divisaOriginal = divisaOriginal;
     }
