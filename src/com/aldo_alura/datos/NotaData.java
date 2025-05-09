@@ -6,6 +6,16 @@ public class NotaData {
     private double cantidadOriginal;
     private double cantidadConvertida;
 
+    public NotaData(){
+    }
+
+    public NotaData(NotaData notaData){
+        this.divisaOriginal = notaData.divisaOriginal;
+        this.divisaAConvertir = notaData.divisaAConvertir;
+        this.cantidadOriginal = notaData.cantidadOriginal;
+        this.cantidadConvertida = notaData.cantidadConvertida;
+    }
+
     public void setDivisaOriginal(String divisaOriginal) {
         this.divisaOriginal = divisaOriginal;
     }
