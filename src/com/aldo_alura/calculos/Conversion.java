@@ -1,3 +1,6 @@
+package com.aldo_alura.calculos;
+
+import java.awt.*;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;

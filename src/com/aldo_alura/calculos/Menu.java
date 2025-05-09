@@ -1,3 +1,5 @@
+package com.aldo_alura.calculos;
+
 import java.util.*;
 
 public class Menu {
