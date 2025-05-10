@@ -3,6 +3,8 @@ package com.aldo_alura.calculos;
 import com.aldo_alura.datos.NotaData;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -38,6 +40,8 @@ public class Conversion {
         String valorInicial;
         String valorFinal;
 
+        almacenaDatos.setFechaHora(tiempo());
+
         if (opcion % 2 == 1) {
             valorInicial = String.format("%.2f en %s",respuesta, divisas.get(divisaPrincipal));
             valorFinal = String.format("%.2f en %s",datoConvertido, divisas.get(opciones.get(opcion)));
@@ -58,5 +62,14 @@ public class Conversion {
 
     public NotaData exportaDatos() {
         return almacenaDatos;
+    }
+
+    private String tiempo(){
+        LocalTime hora = LocalTime.now();
+        LocalDate fecha = LocalDate.now();
+        String tiempo;
+
+        tiempo = "" + fecha + "  " + hora.getHour() + ":" + hora.getMinute() + ":" + hora.getSecond();
+        return tiempo;
     }
 }
