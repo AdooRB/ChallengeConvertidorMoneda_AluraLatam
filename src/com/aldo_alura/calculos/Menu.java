@@ -25,7 +25,7 @@ public class Menu {
     }
 
     public int getOpcionesNumero() {
-        opcionesNumero = listaDeOpciones.size() + 1;
+        opcionesNumero = listaDeOpciones.size() + 2;
 
         if(coleccionDivisas.size() == 0){
             opcionesNumero = 1;
@@ -60,6 +60,8 @@ public class Menu {
 
             }
         }
+        numeral++;
+        menuDivisas += "\n  " + numeral + ") Historial";
         numeral++;
         menuDivisas += "\n  " + numeral + ") Salir";
         menuDivisas += "\n\nElija una opción válida:";
