@@ -1,6 +1,7 @@
 package com.aldo_alura.datos;
 
 public class NotaData {
+    private String fechaHora;
     private String divisaOriginal;
     private String divisaAConvertir;
     private double cantidadOriginal;
@@ -10,10 +11,15 @@ public class NotaData {
     }
 
     public NotaData(NotaData notaData){
+        this.fechaHora = notaData.fechaHora;
         this.divisaOriginal = notaData.divisaOriginal;
         this.divisaAConvertir = notaData.divisaAConvertir;
         this.cantidadOriginal = notaData.cantidadOriginal;
         this.cantidadConvertida = notaData.cantidadConvertida;
+    }
+
+    public void setFechaHora(String fechaHora) {
+        this.fechaHora = fechaHora;
     }
 
     public void setDivisaOriginal(String divisaOriginal) {
@@ -34,6 +40,6 @@ public class NotaData {
 
     @Override
     public String toString() {
-        return String.format("%.2f %s  ->>   %.2f %s",cantidadOriginal,divisaOriginal,cantidadConvertida,divisaAConvertir);
+        return String.format("  %s  |  %.2f %s  ->>   %.2f %s", fechaHora,cantidadOriginal,divisaOriginal,cantidadConvertida,divisaAConvertir);
     }
 }
