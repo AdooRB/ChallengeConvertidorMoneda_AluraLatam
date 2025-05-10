@@ -22,7 +22,7 @@ public class Principal {
             menu.agregarDivisa("COP", "Peso Colombiano");
             menu.agregarDivisa("BRL", "Real Brasileño");
             menu.agregarDivisa("MXN", "Peso Mexicano");
-            //menu.agregarDivisa("ARG", "Peso Argentino");
+            //menu.agregarDivisa("ARS", "Peso Argentino");
 
             menu.setDivisaPrincipal("USD");
 
@@ -33,15 +33,22 @@ public class Principal {
                 if (respuesta == menu.getOpcionesNumero()) {
                     System.out.println("Fin del Programa.");
                     break;
+
                 } else if (respuesta > menu.getOpcionesNumero() || respuesta < 1){
                     throw new ArithmeticException("Error, valor introducido fuera de rango");
+
                 }
 
-                conversionDivisas.inicia(respuesta, menu);
-                conversionDivisas.muestraResultado();
+                if (respuesta != menu.getOpcionesNumero() - 1) {
 
-                almacenamiento.agrega(conversionDivisas.exportaDatos());
-                System.out.println(conversionDivisas.exportaDatos().toString());
+                    conversionDivisas.inicia(respuesta, menu);
+                    conversionDivisas.muestraResultado();
+
+                    almacenamiento.agrega(conversionDivisas.exportaDatos());
+                    System.out.println(conversionDivisas.exportaDatos().toString());
+                }else {
+                    almacenamiento.muestraHistorial();
+                }
             }
             sincronizacionDatos.guardarDatos(almacenamiento);
         } catch (NullPointerException |ArithmeticException e) {
