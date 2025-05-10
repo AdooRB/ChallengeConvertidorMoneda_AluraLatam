@@ -35,7 +35,6 @@ public class SincronizacionDatos {
         while (scanner.hasNextLine()) {
             jsonSTR = jsonSTR + "\n" + scanner.nextLine();
         }
-        System.out.println(jsonSTR);
         scanner.close();
         return jsonSTR;
     }
