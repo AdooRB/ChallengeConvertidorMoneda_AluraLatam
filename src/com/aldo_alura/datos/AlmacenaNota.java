@@ -15,4 +15,16 @@ public class AlmacenaNota {
         listaData.add(nuevaNota);
     }
 
+    public void muestraHistorial(){
+        System.out.println("***************************************************");
+        System.out.println("                --HISTORIAL--");
+
+        for (int i = 0; i < listaData.size(); i++ ){
+            NotaData notaData = new NotaData(listaData.get(i));
+            System.out.println("    " + (i + 1) + ")     " + notaData);
+        }
+        System.out.println("\n***************************************************");
+
+    }
+
 }
