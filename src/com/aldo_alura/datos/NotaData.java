@@ -34,6 +34,6 @@ public class NotaData {
 
     @Override
     public String toString() {
-        return cantidadOriginal + " " + divisaOriginal + " ->> " + cantidadConvertida + " " + divisaAConvertir;
+        return String.format("%.2f %s  ->>   %.2f %s",cantidadOriginal,divisaOriginal,cantidadConvertida,divisaAConvertir);
     }
 }
