@@ -6,13 +6,14 @@ import java.net.ConnectException;
 import java.util.Scanner;
 
 public class Principal {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
         try {
             Menu menu = new Menu();
             Scanner interaccion = new Scanner(System.in);
             Conversion conversionDivisas = new Conversion();
             AlmacenaNota  almacenamiento = new AlmacenaNota();
+            SincronizacionDatos sincronizacionDatos = new SincronizacionDatos();
             int respuesta;
 
             menu.agregarDivisa("USD", "Dólar");
@@ -41,7 +42,7 @@ public class Principal {
                 almacenamiento.agrega(conversionDivisas.exportaDatos());
                 System.out.println(conversionDivisas.exportaDatos().toString());
             }
-            almacenamiento.guardaData();
+            sincronizacionDatos.guardarDatos(almacenamiento);
         } catch (NullPointerException |ArithmeticException e) {
             System.out.println(e.getLocalizedMessage());
         } catch (ConnectException e){
