@@ -14,6 +14,7 @@ public class Principal {
             Conversion conversionDivisas = new Conversion();
             AlmacenaNota  almacenamiento = new AlmacenaNota();
             SincronizacionDatos sincronizacionDatos = new SincronizacionDatos();
+            almacenamiento.actualizaLista(sincronizacionDatos.extraeLista());
             int respuesta;
 
             menu.agregarDivisa("USD", "Dólar");
