@@ -68,8 +68,21 @@ public class Conversion {
         LocalTime hora = LocalTime.now();
         LocalDate fecha = LocalDate.now();
         String tiempo;
+        String horaSTR = "" + hora.getHour();
+        String minutoSTR = "" + hora.getMinute();
+        String segundoSTR = "" + hora.getSecond();
 
-        tiempo = "" + fecha + "  " + hora.getHour() + ":" + hora.getMinute() + ":" + hora.getSecond();
+        if(hora.getHour() < 10){
+            horaSTR = "0" + hora.getHour();
+        }
+        if (hora.getMinute() < 10){
+            minutoSTR = "0" + hora.getMinute();
+        }
+        if (hora.getSecond() < 10){
+            segundoSTR = "0" + hora.getSecond();
+        }
+        tiempo = "" + fecha + "  " + horaSTR + ":" + minutoSTR + ":" + segundoSTR;
+
         return tiempo;
     }
 }
