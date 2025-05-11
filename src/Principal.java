@@ -21,6 +21,7 @@ public class Principal {
                 almacenamiento.actualizaLista(sincronizacionDatos.extraeLista());
             }
 
+            //Agregar divisas y sus nombres a utilizar
             menu.agregarDivisa("USD", "Dólar");
             menu.agregarDivisa("JPY", "Yen Japonés");
             menu.agregarDivisa("COP", "Peso Colombiano");
@@ -28,12 +29,14 @@ public class Principal {
             menu.agregarDivisa("MXN", "Peso Mexicano");
             //menu.agregarDivisa("ARS", "Peso Argentino");
 
+            //agrega la divisa principal
             menu.setDivisaPrincipal("USD");
 
             while (true) {
                 menu.generarMenu();
                 respuesta = interaccion.nextInt();
 
+                //Finalizar programa  ||  Respuesta no está en rango de opciones
                 if (respuesta == menu.getOpcionesNumero()) {
                     System.out.println("Fin del Programa.");
                     break;
@@ -43,18 +46,19 @@ public class Principal {
 
                 }
 
+                //Iniciar conversión  ||  Opción Historial
                 if (respuesta != menu.getOpcionesNumero() - 1) {
 
                     conversionDivisas.inicia(respuesta, menu);
                     conversionDivisas.muestraResultado();
 
                     almacenamiento.agrega(conversionDivisas.exportaDatos());
-                    System.out.println(conversionDivisas.exportaDatos().toString());
                 }else {
                     almacenamiento.muestraHistorial();
                 }
             }
             sincronizacionDatos.guardarDatos(almacenamiento);
+
         } catch (NullPointerException |ArithmeticException e) {
             System.out.println(e.getLocalizedMessage());
         } catch (ConnectException e){
