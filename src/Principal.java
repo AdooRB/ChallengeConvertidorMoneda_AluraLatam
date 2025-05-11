@@ -14,8 +14,12 @@ public class Principal {
             Conversion conversionDivisas = new Conversion();
             AlmacenaNota  almacenamiento = new AlmacenaNota();
             SincronizacionDatos sincronizacionDatos = new SincronizacionDatos();
-            almacenamiento.actualizaLista(sincronizacionDatos.extraeLista());
+            VerificarJson verificarJson = new VerificarJson();
             int respuesta;
+
+            if (verificarJson.existe()) {
+                almacenamiento.actualizaLista(sincronizacionDatos.extraeLista());
+            }
 
             menu.agregarDivisa("USD", "Dólar");
             menu.agregarDivisa("JPY", "Yen Japonés");
