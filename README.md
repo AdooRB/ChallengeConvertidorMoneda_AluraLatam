@@ -25,7 +25,7 @@
 <br>
 
 # Descripción
-   
+   Este Challenge forma parte del curso Alura Latam del grupo G8. Consiste en crear una aplicación que convierta diferentes divisas.
 
 # Funcionalidad
 
