@@ -28,7 +28,18 @@
    Este Challenge forma parte del curso Alura Latam del grupo G8. Consiste en crear una aplicación que convierta diferentes divisas.
 
 # Funcionalidad
-
+## Agregar divisas
+    
+    En la clase Principal.java, se tiene el objeto "menu", se encarga de generar el menú de divisas; pero antes se definen las divisas a mostrar en el menú y la divisa principal que se encargará ser el cambio en todas las opciones generadas.
+    <br>
+    Un ejemplo es:
+    
+    ```Java
+    menu.agregarDivisa("USD", "Dólar");
+    menu.agregarDivisa("JPY", "Yen");
+    menu.agregarDivisa("BRL", "Real");
+    menu.agregarDivisa("MXN", "Peso Mexicano");
+    ```
 
 # Acceso del Proyecto
 
