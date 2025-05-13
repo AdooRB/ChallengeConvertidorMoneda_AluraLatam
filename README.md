@@ -1,11 +1,8 @@
 <h1 align = "center">Challenge Convertidor de Modeda </h1>
 
-<p align = "center">
-
-![Static Badge](https://img.shields.io/badge/Estado-En%20Desarrollo-purple?style=for-the-badge)
-
-![Static Badge](https://img.shields.io/badge/Actualizado-Mayo%202025-greenlight?style=for-the-badge)
-
+<p align = "justify">
+<img src = "https://img.shields.io/badge/Estado-En%20Desarrollo-purple?style=for-the-badge)">
+<img src = "https://img.shields.io/badge/Actualizado-Mayo%202025-greenlight?style=for-the-badge)">
 </p>
 
 # Indice
