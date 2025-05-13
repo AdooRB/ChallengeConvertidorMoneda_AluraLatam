@@ -92,12 +92,10 @@ Como en la siguiente imagen:
 
 ------imagen historial----------
 
-
-### Historial
 <p align = "justify">
-El historial siempre es la penúltima opción del menú. Para que esté actualizando cada vez que se ejecute la aplicación, se guarda los datos en un archivo json.
-<br> 
-Este archivo json se encuentra como "Notas.jason", y se está actualizando cada vez que se hacer  una conversión. Si se requiere eleminar el historial, se tiene que borrar el archivo de manera manual.
+<b>Nota importante:</b> La actualización del historial es posible al guardar los datos en un archivo json. Este archivo se encuentra como <b>"Notas.jason"</b>, y se amplia en cada conversión.
+<br>
+<i>Si se requiere <b>eleminar el historial</b>, se tiene que <b>borrar</b> el archivo de manera <b>manual</b>.</i>
 </p>
 
 # Acceso del Proyecto
