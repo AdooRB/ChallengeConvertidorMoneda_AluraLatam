@@ -108,7 +108,28 @@ Se utilizaron como herramietas:
 *   <b>Curso de Alura Latam</b>: Fomenta la educación en tecnologías y challenges para practicar sobre lo aprendido.
 
 # Diagrama de Flujo
-
+```mermain
+flowchart TD
+    resultado --> Menu
+    historial -- si --> mhistorial["Vizualizar <br>Historial"]
+    historial -- no --> salir{"Salir"}
+    mhistorial --> Menu
+    salir -- si --> guardar("Gurardar
+    Json")
+    guardar --> Fin(["Fin"])
+    salir -- no --> error["Vizualizar error"]
+    error --> Fin
+    conversion ~~~ n1[" "]
+    mhistorial ~~~ n2[" "]
+    Menu@{ shape: curv-trap}
+    elegir@{ shape: trap-t}
+    cantidad@{ shape: trap-t}
+    resultado@{ shape: curv-trap}
+    mhistorial@{ shape: curv-trap}
+    error@{ shape: curv-trap}
+    style n1 stroke:none
+    style n2 stroke:none
+```
 
 # Desarrollador
 
