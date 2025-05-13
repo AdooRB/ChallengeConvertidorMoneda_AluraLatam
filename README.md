@@ -1,11 +1,11 @@
-<h1 align = "center">Challenge Convertidor de Modeda </h1>
+<h1 align = "center">:chart_with_upwards_trend:Challenge Convertidor de Modeda:chart_with_downwards_trend:</h1>
 
 <div align = "center">
 <img src = "https://img.shields.io/badge/Estado-En%20Desarrollo-purple?style=for-the-badge)">
 <img src = "https://img.shields.io/badge/Actualizado-Mayo%202025-greenlight?style=for-the-badge)">
 </div>
 
-# Indice
+# :bookmark:Indice
 
 *   [Descripción](#Descripción)
 
@@ -23,11 +23,11 @@
 
 <br>
 
-# Descripción
+# :pencil:Descripción
 <p align = "justify">
    Este Challenge forma parte del curso Alura Latam del grupo G8. Consiste en crear una aplicación que convierta diferentes divisas, extrayendo las Tasas de Conversión de Moneda desde una API.
 
-# Configuración Previa
+# :wrench:Configuración Previa
 <p>
 Se rquiere realizar unos ajustes previos (si se requieren) para que funcione correctamente la aplicación. Dichos ajustes se confingurarán en la clase <b>Principal</b>.
 </p>
@@ -51,7 +51,7 @@ Se observa, dos parámetros en el método 'agregarDivisa' :
 * <b>nombreDivisa</b>: hace referencia el nombre largo de la divisa. Como <i><u>dólar canadiense</i></u>, <i><u>dólar estaudense</i></u>, porque hay muchos tipos.
 <br><br>
 
-<b>Nota: </b>Es importante que esté bien la <i>divisa (parámetro)</i> para que funcione correctamente la aplicación.
+<b>:exclamation:Nota: </b>Es importante que esté bien la <i>divisa (parámetro)</i> para que funcione correctamente la aplicación.
 </p>
 
 ### Divisa Principal
@@ -67,7 +67,7 @@ menu.setDivisaPrincipal("USD");
 Se observa, el único parámetro es divisa, se debe a la nesesidad de colocar la divisa principal al menu con el método <b>agregarDivisa</b> también, donde se define el nombre de la divisa.
 </p>
 
-# Funcionalidad
+# :heavy_check_mark:Funcionalidad
 <p>
 Al ejecutar la aplicación se muestra el menú sobre las opciones de conversión, historial y salir de la aplicación.
 </p>
@@ -90,24 +90,24 @@ Como en la siguiente imagen:
 ------imagen historial----------
 
 <p align = "justify">
-<b>Nota importante:</b> La actualización del historial es posible al guardar los datos en un archivo json. Este archivo se encuentra como <b>"Notas.jason"</b>, y se amplia en cada conversión.
+<b>:exclamation:Nota importante:</b> La actualización del historial es posible al guardar los datos en un archivo json. Este archivo se encuentra como <b>"Notas.jason"</b>, y se amplia en cada conversión.
 <br>
 <i>Si se requiere <b>eleminar el historial</b>, se tiene que <b>borrar</b> el archivo de manera <b>manual</b>.</i>
 </p>
 
-# Acceso del Proyecto
+# :open_file_folder:Acceso del Proyecto
 Desde la terminal y usando git, ingrese el siguiente comando para obtener acceso al proyecto:
 ```git
 git clone https://github.com/AdooRB/ChallengeConvertidorMoneda_AluraLatam.git
 ```
 
-# Apoyos y Herramientas
+# :hammer:Apoyos y Herramientas
 Se utilizaron como herramietas:
 *   <b>Leguaje Java</b>: como principal leguaje de programación para este proyecto.
 *   <b>Exchange Rate API</b>: Brinda la actugit alización de Tasas de Conversión de Moneda de 161 paises.
 *   <b>Curso de Alura Latam</b>: Fomenta la educación en tecnologías y challenges para practicar sobre lo aprendido.
 
-# Diagrama de Flujo
+# :trident:Diagrama de Flujo
 A grandes rasgos, la aplicación funciona de la siguiente forma:
 
 ```mermaid
@@ -143,7 +143,7 @@ flowchart TD
     style n2 stroke:none
 ```
 
-# Desarrollador
+# :construction_worker:Desarrollador
 
 |[<img src="https://avatars.githubusercontent.com/u/68716029?s=400&u=0469787aea0aaff6920dc019417972c5471cd8ba&v=4" width=115><br><sub>Aldo Flores</sub>](https://github.com/AdooRB)|
 | :---: |
