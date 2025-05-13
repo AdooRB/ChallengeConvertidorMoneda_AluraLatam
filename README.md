@@ -75,7 +75,7 @@ Se observa, el único parámetro es divisa, se debe a la necesidad de colocar la
 Al ejecutar la aplicación se muestra el menú sobre las opciones de conversión, historial y salir de la aplicación.
 </p>
 Como se muestra en la siguiente imagen.
--------------Imagen Menu--------------------
+<img src="/assets/menu.png" title="Muestra Menú">
 <br>
 
 ### Mostrar el resultado
@@ -83,7 +83,7 @@ Como se muestra en la siguiente imagen.
 Una vez que se haya eligiendo una opción y la cantidad a convertir, se mostrará la cantidad original con su divisa largo (nombreDivisa) y la cantidad convertida con su nombre largo.
 </p>
 Como se muestra a continuación:  
---------------Imagen Resultado----------
+<img src="assets/resultado.png" title="Muestra el resultado">
 <br>
 
 ### Mostrar historial
@@ -92,7 +92,7 @@ Al elegir la opción historial, se desplegará el listado almacenado con un form
 </p>
 Como en la siguiente imagen:
 
-------imagen historial----------
+<img src="assets/Vhistorial.png" title="muestra el historial">
 
 <p align = "justify">
 <b>:exclamation:Nota importante:</b> La actualización del historial es posible al guardar los datos en un archivo json. Este archivo se encuentra como <b>"Notas.jason"</b>, y se amplia en cada conversión.
