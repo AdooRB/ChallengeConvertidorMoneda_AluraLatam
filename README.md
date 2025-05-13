@@ -121,35 +121,28 @@ A grandes rasgos, la aplicación funciona de la siguiente forma:
 
 ```mermaid
 flowchart TD
-    Inicio(["Inicio"]) --> Menu["Vizualizar el menú de divisas"]
-    Menu --> elegir["Agrega opción"]
-    elegir --> conversion{"Convertir 
-        divisa"}
-    conversion -- si --> cantidad["Agregar Cantidad"]
-    conversion -- no --> historial{"Mostrar 
-        historial"}
+    Inicio(["Inicio"]) --> actualiza("Actualiza 
+    historial")
+    actualiza -->Menu["Vizualizar el menú de divisas"]
+    Menu--> elegir["Agrega opción"]
+    elegir -- conversion
+    cantidad--> cantidad["Agregar Cantidad"]
     cantidad --> resultado["Vizualizar <br>Resultado"]
     resultado --> Menu
-    historial -- si --> mhistorial["Vizualizar <br>Historial"]
-    historial -- no --> salir{"Salir"}
+    elegir -- mostrar
+    historial--> mhistorial["Vizualizar <br>Historial"]
     mhistorial --> Menu
-    salir -- si --> guardar("Gurardar
+    elegir -- salir--> guardar("Gurardar
     Json")
     guardar --> Fin(["Fin"])
-    salir -- no --> error["Vizualizar error"]
-    error --> Fin
-    conversion ~~~ n1[" "]
-    mhistorial ~~~ n2[" "]
-    Menu@{ shape: curv-trap}
 
+    Menu@{ shape: curv-trap}
     elegir@{ shape: manual-input}
     cantidad@{ shape: manual-input}
     guardar@{ shape: framed-rectangle}
     resultado@{ shape: curv-trap}
     mhistorial@{ shape: curv-trap}
-    error@{ shape: curv-trap}
-    style n1 stroke:none
-    style n2 stroke:none
+    actualiza@{ shape: framed-rectangle}
 ```
 <br>
 
