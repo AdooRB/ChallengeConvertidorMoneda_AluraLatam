@@ -29,27 +29,20 @@
 # Descripción
 <p align = "justify">
    Este Challenge forma parte del curso Alura Latam del grupo G8. Consiste en crear una aplicación que convierta diferentes divisas.
-</p>
 
-# Configuración Previa
-<p align = "justify">
-Antes de ejecutar, se debe realizar unas pre-configuraciones para sacarle provecho al programa. Dichas configurasiones se realizan desde la clase <b>"Principal"</b>.
-</p>
-
-### Agregar divisas
-
-<p align="justify">    
-Se tiene el objeto "Menu", quien se encarga de generar el menú de divisas; pero antes se definen las divisas a mostrar en el menú. Esto se hace con el método del objeto menu <b>agregarDivisa(divisa, nombreDivisa)</b>.
-</p>
-
- Como se muestra en el código:
+# Funcionalidad
+## Agregar divisas
     
-```Java
+    En la clase Principal.java, se tiene el objeto "menu", se encarga de generar el menú de divisas; pero antes se definen las divisas a mostrar en el menú y la divisa principal que se encargará ser el cambio en todas las opciones generadas.
+    <br>
+    Un ejemplo es:
+    
+    ```Java
     menu.agregarDivisa("USD", "Dólar");
     menu.agregarDivisa("JPY", "Yen");
     menu.agregarDivisa("BRL", "Real");
     menu.agregarDivisa("MXN", "Peso Mexicano");
-```
+    ```
 
 Se observa, dos parámetros en el método 'agregarDivisa' :
 * <b>divisa: </b>  hace referencia al código ISO de la divisa. Como el <i><u>peso mexicano</u></i> es <i><u>MXN</u></i>.
