@@ -108,6 +108,7 @@ Se utilizaron como herramietas:
 *   <b>Curso de Alura Latam</b>: Fomenta la educación en tecnologías y challenges para practicar sobre lo aprendido.
 
 # Diagrama de Flujo
+<<<<<<< HEAD
 A grandes rasgos, la aplicación funciona de la siguiente forma:
 ```mermaid
 flowchart TD
@@ -131,15 +132,23 @@ flowchart TD
     conversion ~~~ n1[" "]
     mhistorial ~~~ n2[" "]
     Menu@{ shape: curv-trap}
+<<<<<<< HEAD
     elegir@{ shape: manual-input}
     cantidad@{ shape: manual-input}
     guardar@{ shape: framed-rectangle}
+=======
+    elegir@{ shape: trap-t}
+    cantidad@{ shape: trap-t}
+>>>>>>> 1c55ad34f8a8463d8c063da6054d650e1991994c
     resultado@{ shape: curv-trap}
     mhistorial@{ shape: curv-trap}
     error@{ shape: curv-trap}
     style n1 stroke:none
     style n2 stroke:none
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1c55ad34f8a8463d8c063da6054d650e1991994c
 ```
 
 # Desarrollador
