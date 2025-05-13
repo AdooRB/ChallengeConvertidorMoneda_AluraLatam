@@ -30,25 +30,32 @@
 <p align = "justify">
    Este Challenge forma parte del curso Alura Latam del grupo G8. Consiste en crear una aplicación que convierta diferentes divisas.
 
-# Funcionalidad
-## Agregar divisas
+# Configuración Previa
+<p>
+Se rquiere realizar unos ajustes previos (si se requieren) para que funcione correctamente la aplicación. Dichos ajustes se confingurarán en la clase <b>Principal</b>.
+</p>
+
+### Agregar divisas
+<p align = "justify">   
+En la clase Principal.java, se tiene el objeto "menu", se encarga de generar el menú de divisas; pero antes se definen las divisas a mostrar en el menú y la divisa principal que se encargará ser el cambio en todas las opciones generadas.
+</b>
+<br>
+Un ejemplo es:
     
-    En la clase Principal.java, se tiene el objeto "menu", se encarga de generar el menú de divisas; pero antes se definen las divisas a mostrar en el menú y la divisa principal que se encargará ser el cambio en todas las opciones generadas.
-    <br>
-    Un ejemplo es:
-    
-    ```Java
+```Java
     menu.agregarDivisa("USD", "Dólar");
     menu.agregarDivisa("JPY", "Yen");
     menu.agregarDivisa("BRL", "Real");
     menu.agregarDivisa("MXN", "Peso Mexicano");
-    ```
-
+```
+<p align = "justify">
 Se observa, dos parámetros en el método 'agregarDivisa' :
 * <b>divisa: </b>  hace referencia al código ISO de la divisa. Como el <i><u>peso mexicano</u></i> es <i><u>MXN</u></i>.
 * <b>nombreDivisa</b>: hace referencia el nombre largo de la divisa. Como <i><u>dólar canadiense</i></u>, <i><u>dólar estaudense</i></u>, porque hay muchos tipos.
+<br><br>
 
 <b>Nota: </b>Es importante que esté bien la <i>divisa (parámetro)</i> para que funcione correctamente la aplicación.
+</p>
 
 ### Divisa Principal
 <p align = "justify"> 
