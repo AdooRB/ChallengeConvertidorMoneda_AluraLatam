@@ -96,7 +96,10 @@ Como en la siguiente imagen:
 </p>
 
 # Acceso del Proyecto
-
+Desde la terminal y usando git, ingrese el siguiente comando para obtener acceso al proyecto:
+```git
+git clone https://github.com/AdooRB/ChallengeConvertidorMoneda_AluraLatam.git
+```
 
 # Apoyos y Herramientas
 Se utilizaron como herramietas:
