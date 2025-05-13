@@ -12,6 +12,8 @@
 
 *   [Descripción](#Descripción)
 
+*   [Configuración Previa](#configuración-previa)
+
 *   [Funcionalidad](#Funcionalidad)
 
 *   [Acceso del Proyecto](#Acceso-del-Proyecto)
@@ -25,34 +27,19 @@
 <br>
 
 # Descripción
+<p align = "justify">
    Este Challenge forma parte del curso Alura Latam del grupo G8. Consiste en crear una aplicación que convierta diferentes divisas.
-
-# Funcionalidad
-<p>
-Al ejecutar la aplicación se muestra el menú sobre las opciones de conversión, historial y salir de la aplicación.
 </p>
-Como se muestra en la siguiente imagen.
--------------Imagen Menu--------------------
 
-### Mostrar el resultado
-<p>
-Una vez que se haya elgindo una opción y la cantidad a convertir, se mostrará la cantidad original con su divisa largo (nnombreDivisa) y la cantidad convertida con su nombre largo.
+# Configuración Previa
+<p align = "justify">
+Antes de ejecutar, se debe realizar unas pre-configuraciones para sacarle provecho al programa. Dichas configurasiones se realizan desde la clase <b>"Principal"</b>.
 </p>
-Como se muestra a continuación:  
---------------Imagen Resultado----------
-
-### Mostrar historial
-<p>
-Al elegir la opción historial, se desplegará el listado almacendo con un formato: numeral, fecha, Hora, y la conversión en formato corto.
-</p>
-Como en la siguiente imagen:
-
-------imagen historial----------
 
 ### Agregar divisas
 
 <p align="justify">    
-En la clase Principal.java, tiene el objeto "Menu", se encarga de generar el menú de divisas; pero antes se definen las divisas a mostrar en el menú. Esto se hace con el método del objeto menu <b>agregarDivisa(divisa, nombreDivisa)</b>.
+Se tiene el objeto "Menu", quien se encarga de generar el menú de divisas; pero antes se definen las divisas a mostrar en el menú. Esto se hace con el método del objeto menu <b>agregarDivisa(divisa, nombreDivisa)</b>.
 </p>
 
  Como se muestra en el código:
@@ -82,6 +69,29 @@ menu.setDivisaPrincipal("USD");
 <p align = "justify">
 Se observa, el único parámetro es divisa, se debe a la nesesidad de colocar la divisa principal al menu con el método <b>agregarDivisa</b> también, donde se define el nombre de la divisa.
 </p>
+
+# Funcionalidad
+<p>
+Al ejecutar la aplicación se muestra el menú sobre las opciones de conversión, historial y salir de la aplicación.
+</p>
+Como se muestra en la siguiente imagen.
+-------------Imagen Menu--------------------
+
+### Mostrar el resultado
+<p>
+Una vez que se haya elgindo una opción y la cantidad a convertir, se mostrará la cantidad original con su divisa largo (nnombreDivisa) y la cantidad convertida con su nombre largo.
+</p>
+Como se muestra a continuación:  
+--------------Imagen Resultado----------
+
+### Mostrar historial
+<p>
+Al elegir la opción historial, se desplegará el listado almacendo con un formato: numeral, fecha, Hora, y la conversión en formato corto.
+</p>
+Como en la siguiente imagen:
+
+------imagen historial----------
+
 
 ### Historial
 <p align = "justify">
