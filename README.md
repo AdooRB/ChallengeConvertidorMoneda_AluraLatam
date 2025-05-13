@@ -104,7 +104,10 @@ Este archivo json se encuentra como "Notas.jason", y se está actualizando cada 
 
 
 # Apoyos y Herramientas
-
+Se utilizaron como herramietas:
+*   <b>Leguaje Java</b>: como principal leguaje de programación para este proyecto.
+*   <b>Exchange Rate API</b>: Brinda la actugit alización de Tasas de Conversión de Moneda de 161 paises.
+*   <b>Curso de Alura Latam</b>: Fomenta la educación en tecnologías y challenges para practicar sobre lo aprendido.
 
 # Diagrama de Flujo
 
