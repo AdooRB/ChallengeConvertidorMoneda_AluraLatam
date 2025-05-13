@@ -1,9 +1,9 @@
 <h1 align = "center">Challenge Convertidor de Modeda </h1>
 
-<p align = "justify">
+<div align = "center">
 <img src = "https://img.shields.io/badge/Estado-En%20Desarrollo-purple?style=for-the-badge)">
 <img src = "https://img.shields.io/badge/Actualizado-Mayo%202025-greenlight?style=for-the-badge)">
-</p>
+</div>
 
 # Indice
 
