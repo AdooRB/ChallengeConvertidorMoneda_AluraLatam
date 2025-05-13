@@ -25,7 +25,7 @@
 
 # Descripción
 <p align = "justify">
-   Este Challenge forma parte del curso Alura Latam del grupo G8. Consiste en crear una aplicación que convierta diferentes divisas.
+   Este Challenge forma parte del curso Alura Latam del grupo G8. Consiste en crear una aplicación que convierta diferentes divisas, extrayendo las Tasas de Conversión de Moneda desde una API.
 
 # Configuración Previa
 <p>
